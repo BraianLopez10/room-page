@@ -1,0 +1,166 @@
+:root {
+  /* ### Primary */
+  --darkGray: hsl(0, 0%, 63%);
+  --black: hsl(0, 0%, 0%);
+  --white: hsl(0, 0%, 100%);
+  --veryDarkGray: hsl(0, 0%, 27%);
+}
+/* ## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px */
+
+html {
+  font-size: 12px;
+  font-family: "Spartan", sans-serif;
+}
+
+body {
+  min-width: 375px;
+  max-width: 1440px;
+  margin: 0;
+  padding: 0;
+}
+.header {
+  position: absolute;
+  top: 45px;
+  width: 100%;
+  z-index: 1;
+  &__button {
+    display: flex;
+    align-items: center;
+    button {
+      position: absolute;
+      outline: none;
+      border: 0;
+      font-size: 2rem;
+      background: none;
+      padding-left: 20px;
+    }
+    h3 {
+      color: white;
+      font-size: 2rem;
+      margin: 0 auto;
+    }
+  }
+}
+.wrap {
+  margin: 75px 40px 0 55px;
+}
+.p-style {
+  margin: 0;
+  margin-top: 25px;
+  color: var(--darkGray);
+  font-size: 1.2rem;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  &__container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  &__image {
+    width: 100%;
+    height: 360px;
+    background: url("/public/images/mobile-image-hero-1.jpg") no-repeat;
+    background-size: 100% 100%, cover;
+  }
+  &__buttons {
+    width: 120px;
+    height: 60px;
+    background-color: var(--black);
+    display: flex;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    &__btn {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      outline: none;
+      background-color: var(--black);
+    }
+  }
+
+  &__description {
+    h3 {
+      font-size: 2.3rem;
+      margin: 0;
+    }
+  }
+  &__pay-button {
+    margin-top: 60px;
+    align-items: center;
+    button {
+      margin: 0;
+      padding: 0;
+      background: none;
+      border: 0;
+      outline: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      span {
+        font-size: 1.7rem;
+        letter-spacing: 10px;
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+.about-us {
+  margin-top: 75px;
+  &__image {
+    height: 260px;
+    background: url("/public/images/image-about-dark.jpg");
+  }
+  &__image-2 {
+    margin-top: 75px;
+    height: 260px;
+    background: url("/public/images/image-about-light.jpg");
+  }
+  &__description {
+    h3 {
+      letter-spacing: 3px;
+    }
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .hero {
+    flex-direction: row;
+    &__container {
+      min-width: 840px;
+      height: 540px;
+    }
+    &__image {
+      width: 100%;
+      height: 100%;
+      background: url("/public/images/desktop-image-hero-1.jpg") no-repeat;
+      background-size: 100% 100%, cover;
+    }
+    &__description {
+      width: 100%;
+    }
+    &__buttons {
+      right: -120px;
+    }
+  }
+  .about-us {
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    &__image-2 {
+      margin-top: 0;
+    }
+  }
+  .wrap {
+    margin: 50px;
+  }
+}
