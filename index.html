@@ -12,69 +12,111 @@
     <title>Room</title>
   </head>
   <body>
-    <header>
-      <nav class="header">
-        <div class="header__button">
-          <button>
+    <div class="app">
+      <header class="header">
+        <nav class="header__container">
+          <button class="open-menu" id="open-menu">
             <img src="public/icons/icon-hamburger.svg" alt="" />
           </button>
-          <h3>room</h3>
-        </div>
-        <ul style="display: none">
-          <li>Home</li>
-          <li>Shop</li>
-          <li>About</li>
-          <li>Contact</li>
-        </ul>
-      </nav>
-    </header>
-    <section class="hero">
-      <div class="hero__container">
-        <div class="hero__image"></div>
-        <div class="hero__buttons">
-          <button class="hero__buttons__btn hero__buttons__btn--left">
-            <img src="public/icons/icon-angle-left.svg" />
-          </button>
-          <button class="hero__buttons__btn hero__buttons__btn--right">
-            <img src="public/icons/icon-angle-right.svg" />
-          </button>
-        </div>
-      </div>
-      <div class="wrap">
-        <div class="hero__description">
-          <h3>Discover Innovative ways to decorate</h3>
-          <p class="p-style">
-            We provide unmatched quality, comfort, and style for property owners
-            across the country. Our experts combine form and function in
-            bringing your vision to life. Create a room in your own style with
-            our collection and make your property a reflection of you and what
-            you love.
-          </p>
-        </div>
-        <div class="hero__pay-button">
-          <button>
-            <span>SHOP NOW</span>
-            <img src="public/icons/icon-arrow.svg" />
-          </button>
-        </div>
-      </div>
-    </section>
-    <section class="about-us">
-      <div class="about-us__image"></div>
-      <div class="wrap">
-        <div class="about-us__description">
-          <h3>ABOUT OUR FURNITURE</h3>
-          <p class="p-style">
-            Our multifunctional collection blends design and function to suit
-            your individual taste. Make each room unique, or pick a cohesive
-            theme that best express your interests and what inspires you. Find
-            the furniture pieces you need, from traditional to contemporary
-            styles or anything in between. Product specialists are available to
-            help you create your dream space.
-          </p>
-        </div>
-      </div>
-      <div class="about-us__image-2"></div>
-    </section>
+          <h3 class="room-logo">room</h3>
+          <div class="menu" id="menu">
+            <button id="close-button">
+              <img src="public/icons/icon-close.svg" alt="" />
+            </button>
+            <ul>
+              <li>Home</li>
+              <li>Shop</li>
+              <li>About</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <div class="wrap-content" id="wrap-content"></div>
+        <section class="hero">
+          <div class="hero__container">
+            <div class="hero__images" id="hero-images">
+              <img
+                class="for_mobile"
+                src="/public/images/mobile-image-hero-1.jpg"
+                alt=""
+              />
+              <img
+                class="for_mobile"
+                src="/public/images/mobile-image-hero-2.jpg"
+                alt=""
+              />
+              <img
+                class="for_mobile"
+                src="/public/images/mobile-image-hero-3.jpg"
+                alt=""
+              />
+              <img
+                class="for_desktop"
+                src="/public/images/desktop-image-hero-1.jpg"
+                alt=""
+              />
+              <img
+                class="for_desktop"
+                src="/public/images/desktop-image-hero-2.jpg"
+                alt=""
+              />
+              <img
+                class="for_desktop"
+                src="/public/images/desktop-image-hero-3.jpg"
+                alt=""
+              />
+            </div>
+            <div class="hero__buttons">
+              <button
+                id="button-left"
+                class="hero__buttons__btn hero__buttons__btn--left"
+              >
+                <img src="public/icons/icon-angle-left.svg" />
+              </button>
+              <button
+                id="button-right"
+                class="hero__buttons__btn hero__buttons__btn--right"
+              >
+                <img src="public/icons/icon-angle-right.svg" />
+              </button>
+            </div>
+          </div>
+          <div class="hero__wrap">
+            <div class="hero__description">
+              <h3 id="slice-header"></h3>
+              <p id="slice-content" class="p-style"></p>
+            </div>
+            <div class="hero__pay-button">
+              <button>
+                <span>SHOP NOW</span>
+                <img src="public/icons/icon-arrow.svg" />
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="about-us">
+          <div class="about-us__image"></div>
+          <div class="wrap">
+            <div class="about-us__description">
+              <h3>ABOUT OUR FURNITURE</h3>
+              <p class="p-style">
+                Our multifunctional collection blends design and function to
+                suit your individual taste. Make each room unique, or pick a
+                cohesive theme that best express your interests and what
+                inspires you. Find the furniture pieces you need, from
+                traditional to contemporary styles or anything in between.
+                Product specialists are available to help you create your dream
+                space.
+              </p>
+            </div>
+          </div>
+          <div class="about-us__image-2"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="public/js/index.js"></script>
   </body>
 </html>
