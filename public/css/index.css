@@ -174,12 +174,12 @@ body {
 }
 .about-us__image {
   height: 260px;
-  background: url("/public/images/image-about-dark.jpg");
+  background: url("../images/image-about-dark.jpg");
 }
 .about-us__image-2 {
   margin-top: 75px;
   height: 260px;
-  background: url("/public/images/image-about-light.jpg");
+  background: url("../images/image-about-light.jpg");
 }
 .about-us__description h3 {
   letter-spacing: 3px;

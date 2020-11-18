@@ -166,12 +166,12 @@ body {
   margin-top: 75px;
   &__image {
     height: 260px;
-    background: url("/public/images/image-about-dark.jpg");
+    background: url("../images/image-about-dark.jpg");
   }
   &__image-2 {
     margin-top: 75px;
     height: 260px;
-    background: url("/public/images/image-about-light.jpg");
+    background: url("../images/image-about-light.jpg");
   }
   &__description {
     h3 {
